@@ -1,0 +1,14 @@
+camunda:
+  bpm.admin-user:
+    id: admin
+    password: Admin12345
+
+spring:
+  kafka:
+    consumer:
+      group-id: kafka-demo
+
+app:
+  kafka:
+    topic:
+      broadcast: test-topic

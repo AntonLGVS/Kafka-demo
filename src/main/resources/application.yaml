@@ -1,0 +1,19 @@
+camunda:
+  bpm.admin-user:
+    id: admin
+    password: Admin12345
+
+spring:
+  kafka:
+    consumer:
+      group-id: kafka-demo
+      properties:
+        spring.json.trusted.packages: com.lgvs.dev.kafka.trusted
+
+    producer:
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
+app:
+  kafka:
+    topic:
+      broadcast: topic
